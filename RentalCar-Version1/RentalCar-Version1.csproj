@@ -1,0 +1,1022 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36FC8155-A004-4108-B38A-440AE13CBAA8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RentalCar_Version1</RootNamespace>
+    <AssemblyName>RentalCar-Version1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Desktop\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookingDossier\Controls\DetailsBookingCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingDossier\Controls\DetailsBookingCtrl.Designer.cs">
+      <DependentUpon>DetailsBookingCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingDossier\Controls\DetailsWithFilterBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingDossier\Controls\DetailsWithFilterBooking.Designer.cs">
+      <DependentUpon>DetailsWithFilterBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingDossier\frmm\FRM-ADDUPDATEBOOKING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingDossier\frmm\FRM-ADDUPDATEBOOKING.Designer.cs">
+      <DependentUpon>FRM-ADDUPDATEBOOKING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingDossier\frmm\FRM-DETAILSBOOKING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingDossier\frmm\FRM-DETAILSBOOKING.Designer.cs">
+      <DependentUpon>FRM-DETAILSBOOKING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingDossier\frmm\Testfff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingDossier\frmm\Testfff.Designer.cs">
+      <DependentUpon>Testfff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers1\CustomerUPDATEADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers1\CustomerUPDATEADD.Designer.cs">
+      <DependentUpon>CustomerUPDATEADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers1\DetailsCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers1\DetailsCustomer.Designer.cs">
+      <DependentUpon>DetailsCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers1\filerCustomers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customers1\filerCustomers.Designer.cs">
+      <DependentUpon>filerCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dossier-Returns\Control\ReturnDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dossier-Returns\Control\ReturnDetails.Designer.cs">
+      <DependentUpon>ReturnDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dossier-Returns\frm\ADDUPDATE-return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dossier-Returns\frm\ADDUPDATE-return.Designer.cs">
+      <DependentUpon>ADDUPDATE-return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dossier-Returns\frm\frm-ReturnDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dossier-Returns\frm\frm-ReturnDetails.Designer.cs">
+      <DependentUpon>frm-ReturnDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu-Fr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu-Fr.Designer.cs">
+      <DependentUpon>Menu-Fr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persons\Controls\PersonDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Persons\Controls\PersonDetails.Designer.cs">
+      <DependentUpon>PersonDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persons\Controls\PersonDetailsWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Persons\Controls\PersonDetailsWithFilter.Designer.cs">
+      <DependentUpon>PersonDetailsWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persons\Forms\Frm-ADDUPDATEPERSONS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Persons\Forms\Frm-ADDUPDATEPERSONS.Designer.cs">
+      <DependentUpon>Frm-ADDUPDATEPERSONS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persons\Forms\frm-filterVhicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Persons\Forms\frm-filterVhicle.Designer.cs">
+      <DependentUpon>frm-filterVhicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persons\Forms\Frm-PersonDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Persons\Forms\Frm-PersonDetails.Designer.cs">
+      <DependentUpon>Frm-PersonDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persons\Forms\Frm-PesonDetailsWithfilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Persons\Forms\Frm-PesonDetailsWithfilter.Designer.cs">
+      <DependentUpon>Frm-PesonDetailsWithfilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMenu\Booking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMenu\Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMenu\Customers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMenu\Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMenu\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMenu\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlMenu\Locked.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMenu\Locked.Designer.cs">
+      <DependentUpon>Locked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMenu\People.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMenu\People.Designer.cs">
+      <DependentUpon>People.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMenu\Return.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMenu\Return.Designer.cs">
+      <DependentUpon>Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMenu\Transactions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMenu\Transactions.Designer.cs">
+      <DependentUpon>Transactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMenu\Users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMenu\Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMenu\Vehicules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMenu\Vehicules.Designer.cs">
+      <DependentUpon>Vehicules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userstest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userstest.Designer.cs">
+      <DependentUpon>Userstest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ADDUPDATEUSERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\ADDUPDATEUSERS.Designer.cs">
+      <DependentUpon>ADDUPDATEUSERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UsersDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UsersDetails.Designer.cs">
+      <DependentUpon>UsersDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicules1\control\DetailsVehicule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehicules1\control\DetailsVehicule.Designer.cs">
+      <DependentUpon>DetailsVehicule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicules1\control\FilterVehicule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehicules1\control\FilterVehicule.Designer.cs">
+      <DependentUpon>FilterVehicule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicules1\FORM\FRM-ADDUPDATEVEHILE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicules1\FORM\FRM-ADDUPDATEVEHILE.Designer.cs">
+      <DependentUpon>FRM-ADDUPDATEVEHILE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicules1\FORM\FRM-DETAILSVEHICULE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicules1\FORM\FRM-DETAILSVEHICULE.Designer.cs">
+      <DependentUpon>FRM-DETAILSVEHICULE.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BookingDossier\Controls\DetailsBookingCtrl.resx">
+      <DependentUpon>DetailsBookingCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingDossier\Controls\DetailsWithFilterBooking.resx">
+      <DependentUpon>DetailsWithFilterBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingDossier\frmm\FRM-ADDUPDATEBOOKING.resx">
+      <DependentUpon>FRM-ADDUPDATEBOOKING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingDossier\frmm\FRM-DETAILSBOOKING.resx">
+      <DependentUpon>FRM-DETAILSBOOKING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingDossier\frmm\Testfff.resx">
+      <DependentUpon>Testfff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers1\CustomerUPDATEADD.resx">
+      <DependentUpon>CustomerUPDATEADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers1\DetailsCustomer.resx">
+      <DependentUpon>DetailsCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers1\filerCustomers.resx">
+      <DependentUpon>filerCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dossier-Returns\Control\ReturnDetails.resx">
+      <DependentUpon>ReturnDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dossier-Returns\frm\ADDUPDATE-return.resx">
+      <DependentUpon>ADDUPDATE-return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dossier-Returns\frm\frm-ReturnDetails.resx">
+      <DependentUpon>frm-ReturnDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu-Fr.resx">
+      <DependentUpon>Menu-Fr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persons\Controls\PersonDetails.resx">
+      <DependentUpon>PersonDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persons\Controls\PersonDetailsWithFilter.resx">
+      <DependentUpon>PersonDetailsWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persons\Forms\Frm-ADDUPDATEPERSONS.resx">
+      <DependentUpon>Frm-ADDUPDATEPERSONS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persons\Forms\frm-filterVhicle.resx">
+      <DependentUpon>frm-filterVhicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persons\Forms\Frm-PersonDetails.resx">
+      <DependentUpon>Frm-PersonDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persons\Forms\Frm-PesonDetailsWithfilter.resx">
+      <DependentUpon>Frm-PesonDetailsWithfilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMenu\Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMenu\Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMenu\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControlMenu\Locked.resx">
+      <DependentUpon>Locked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMenu\People.resx">
+      <DependentUpon>People.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMenu\Return.resx">
+      <DependentUpon>Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMenu\Transactions.resx">
+      <DependentUpon>Transactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMenu\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMenu\Vehicules.resx">
+      <DependentUpon>Vehicules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userstest.resx">
+      <DependentUpon>Userstest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ADDUPDATEUSERS.resx">
+      <DependentUpon>ADDUPDATEUSERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UsersDetails.resx">
+      <DependentUpon>UsersDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicules1\control\DetailsVehicule.resx">
+      <DependentUpon>DetailsVehicule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicules1\control\FilterVehicule.resx">
+      <DependentUpon>FilterVehicule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicules1\FORM\FRM-ADDUPDATEVEHILE.resx">
+      <DependentUpon>FRM-ADDUPDATEVEHILE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicules1\FORM\FRM-DETAILSVEHICULE.resx">
+      <DependentUpon>FRM-DETAILSVEHICULE.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logic-Tier\Logic-Tier.csproj">
+      <Project>{bcca7952-92b3-4c5b-80d9-537831ff85f1}</Project>
+      <Name>Logic-Tier</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_settings 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add New User 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add New User 72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Person 40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Person 72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddAppointment 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddPerson 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application Types 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application Types 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applications 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cars 48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseBlack1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeBlack32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Count 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Country 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Damaged Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete 32 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detained Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Driver License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Driver Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drivers 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driving-test 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVLD Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Faild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\International 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IssueDrivingLicense 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\License Type 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\License View 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LicenseView 400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Local 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Local Driving License 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Local Driving License 5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LocalDriving License.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Final.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lost Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage Applications 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage Applications 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage People.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money 32 - 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Application 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PassedTests 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People 400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonDetails 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonLicenseHistory 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonLicenseHistory 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Release Detained License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Release Detained License 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Release Detained License 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Renew Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Retake Test 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schedule Test 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schedule Test 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchPerson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send email 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign Out 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_in 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_out 32 -2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignOut 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Street Test 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test Type 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestType 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestType 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 32 -2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users 2 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users 2 400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vision 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vision Test 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WallPaper2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Woman 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Written Test 32 Sechdule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Written Test 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Written Test 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-vehicle-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-car-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-car-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-car-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-modifier-voiture-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supprimer-voiture-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-volet-de-détails-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voiture-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-suv-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-suv-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-year-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plaque-d&amp;#39%3bimmatriculation-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-compteur-de-vitesse-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tesla-model-x-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-station-essence-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-moyenne-2-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ok-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voiture-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voiture-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voiture-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chercher-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chercher-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voiture-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-booking-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-properties-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-booking-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-booking-100 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-modifier-voiture-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ok-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-car-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-car-322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voiture-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-start-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-start-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-start-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-end-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pickup-point-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-location-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-location-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-appointment-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-price-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-transfer-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-notes-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-person-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-view-details-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transaction-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BookingDossier\NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-speedometer-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-speedometer-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-date-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refund-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-view-details-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ok-322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-auditorium-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reception-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sedan-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-booking-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-credit-card-transfer-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-users-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-rental-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-rental-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-rental-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-subtract-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-crowd-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-fire-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-person-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-32 %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-person-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-locked-150.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
